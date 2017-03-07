@@ -1,0 +1,29 @@
+{
+  "name": "masync",
+  "version": "1.0.0",
+  "description": "Asynchronous Mithril components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barneycarroll/masync.git"
+  },
+  "keywords": [
+    "mithril",
+    "mithril.js",
+    "plugin",
+    "async",
+    "components"
+  ],
+  "author": "Barney Carroll <barney.carroll@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barneycarroll/masync/issues"
+  },
+  "homepage": "https://github.com/barneycarroll/masync#readme",
+  "dependencies": {
+    "mithril": "^1.0.1"
+  }
+}

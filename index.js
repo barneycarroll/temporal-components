@@ -7,8 +7,11 @@ const isntit  = new Set() // Failed initialisation
 const unmade  = new Set() // Failed creation
 // FYI "isn't it" is the Welsh opposite of the South English "innit"
 
+const asap    = () =>
+  new Promise(done => (window.setImmediate || window.setTimeout)(done))
+
 // Convenience function to fork logic depending on method return values
-const fork    = (outcome, ifBoth, ifAsync, ifFalse, ifNone) => {
+const fork    = (outcome, ifBoth, ifFalse, ifAsync, ifNone) => {
   const isFalse = outcome == false
   const isAsync = outcome && typeof outcome.then === 'function'
 

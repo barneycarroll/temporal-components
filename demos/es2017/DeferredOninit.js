@@ -1,8 +1,8 @@
-// import m from 'mithril'
-// import asynchronise from '../'
+import m from 'mithril'
+import asynchronise from '../'
 
-const DeferredOninit = asynchronise({
-  async oninit : ({state}) =>
+export default asynchronise({
+  oninit : async ({state}) =>
     m.request('http://rem-rest-api.herokuapp.com/api/users/2')
       .then(data => {
         state.data = data

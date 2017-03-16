@@ -1,5 +1,5 @@
 {
-  "name": "masync",
+  "name": "temporal-components",
   "version": "1.0.0",
   "description": "Asynchronous Mithril components",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/barneycarroll/masync.git"
+    "url": "git+https://github.com/barneycarroll/temporal-components.git"
   },
   "keywords": [
     "mithril",
@@ -24,9 +24,9 @@
   "author": "Barney Carroll <barney.carroll@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/barneycarroll/masync/issues"
+    "url": "https://github.com/barneycarroll/temporal-components/issues"
   },
-  "homepage": "https://github.com/barneycarroll/masync#readme",
+  "homepage": "https://github.com/barneycarroll/temporal-components#readme",
   "dependencies": {
     "mithril": "^1.0.1"
   }

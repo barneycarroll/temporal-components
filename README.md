@@ -1,4 +1,4 @@
-# masync
+# Temporal components
 
 **Work in progress:** Extra lifecycle controls for Mithril components
 
@@ -7,13 +7,13 @@ This codebase exposes a function which extends the consumed component's lifecycl
 * `onbeforeupdate` has special semantics when it returns `false`
 * `onbeforeremove` has special semantics when it returns a `Promise`
 
-*masync* extends `oninit`, `oncreate`, `onbeforeupdate` & `onupdate` to trigger equivalent functionality when they trigger either `false` or `Promise`, too. This affords exciting new opportunities.
+*Temporal components* extend `oninit`, `oncreate`, `onbeforeupdate` & `onupdate` to trigger equivalent functionality when they trigger either `false` or `Promise`, too. This affords exciting new opportunities.
 
 ```javascript
-import desynchronise from 'masync'
+import temp from 'temporal-components'
 
 // Straw man
-export default desynchronise({
+export default temp({
   oninit(){
     return false
     // ^ Indicate that the component failed to initialise.

@@ -1,7 +1,7 @@
 import m from 'mithril'
-import asynchronise from '../'
+import temp from '../'
 
-export default asynchronise({
+export default temp({
   oninit : async ({state}) =>
     m.request('http://rem-rest-api.herokuapp.com/api/users/2')
       .then(data => {

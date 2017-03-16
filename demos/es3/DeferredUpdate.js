@@ -1,4 +1,4 @@
-var DeferredUpdate = asynchronise({
+var DeferredUpdate = temp({
   onbeforeupdate : function(before, after){
     if(after === before)
       return false

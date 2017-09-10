@@ -62,7 +62,7 @@ export default temp({
 Given that `false` & `Promise` amount to the same functionality for different architectures, reasons for either fit into 2 broad categories:
 
 1. Yielding control from the render loop to another process
-3. Better internal semantics for complex licecycles
+3. Better internal semantics for complex lifecycles
 
 The first is a common requirement in web UIs, applied in current Mithril API by `onbeforeremove` (for DOM animation) and RouteResolvers' `onmatch` (for data fetching). Yielding control to URL logic, DOM animation processes or 3rd party plugins is not an anti-pattern. In contrast, remodelling your application such that the stateless view is capable of catering for all possible states of routed resource acquisition, element movement & removal in a purely procedural way is incredibly difficult. The argument that view components should be stateless is thwarted by the counter-argument that models shouldn't include view-specific data. If you want these features, you may as well model them in the place they make sense instead of re-designing your entire application structure.
 
